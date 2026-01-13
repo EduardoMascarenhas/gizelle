@@ -3,33 +3,55 @@ import React from 'react';
 const Sobre: React.FC = () => {
 
   return (
-    <section id="sobre" className="dark:bg-custom-black bg-custom-white py-16 px-5 scroll-mt-24 ">
-      <div className="flex flex-col md:flex-row items-center justify-between space-y-8 gap-10 md:space-y-0 max-w-6xl mx-auto">
+    <section id="sobre" className="bg-custom-black py-16 px-5 scroll-mt-24 ">
+      <div className="flex flex-col lg:flex-row items-center p-10 lg:p-0 space-y-8 gap-20 md:space-y-0 max-w-6xl mx-auto">
         <div className="flex-shrink-0">
           <img
-            src="/gizelle.png" 
+            src="/assets/giselle.jpg"
             alt="Giselle"
-            className="w-full h-full object-contain"
+            className="max-w-[470px] h-full object-contain"
           />
         </div>
-
-        <div className="text-center md:text-left md:w-2/3 space-y-4">
-          <h2 className="text-3xl font-semibold text-custom-brown">SOBRE MIM</h2>
-          <p className=" text-black">
-            Oi, sou Giselle, fotógrafa e publicitária em Feira de Santana.
+        <div className="text-center md:text-left md:w-2/3 space-y-4 max-w-[420px]">
+          <p className=" text-white">
+            UMA APRESENTAÇÃO É SEMPRE NESCESSÁRIA
           </p>
-          <p className=" text-black">
-            Fotografia, para mim, é sobre manter viva a memória da vida como ela acontece — simples, real e significativa. Minha fotografia une
-            o lado documental, que valoriza o que é real, com um olhar estratégico, essencial para os retratos profissionais e trabalhos de marcas.
-            Minha formação em Publicidade me ajudou a criar imagens que traduzem essência e posicionamento de forma clara e verdadeira.
+          <div className='flex gap-[15px] items-center justify-center md:justify-start  '>
+            <hr className='w-[10px]' />
+            <h2 style={{ fontFamily: "var(--font-playfair-display)" }} className="text-3xl italic font-light tracking-wide text-custom-white">
+              prazer, Giselle
+            </h2>
+          </div>
+          <p className=" text-custom-white">
+            Antes de te apresentar o meu trabalho preciso falar um
+            pouco sobre mim.
           </p>
-          <p className=" text-black">
-            Além da fotografia, sou apaixonada por filmes e séries. Observar como cada história é contada através das cores, da iluminação, da
-            composição e dos ângulos, me inspira diariamente a criar registros que transmitem sentimentos e narrativas de maneira autêntica.
+          <p className=" text-custom-white">
+            Tenho 28 anos, sou formada em Publicidade e Propaganda,
+            mas foi a fotografia que me conquistou antes mesmo de
+            começar a faculdade. Sigo esse caminho porque é onde me
+            encontro de verdade e sou feliz.
           </p>
-          <p className=" text-black">
-            Minha fotografia nasce do encontro entre técnica, sensibilidade e intenção: onde busco contar histórias verdadeiras e, ao mesmo
-            tempo, conectar pessoas àquilo que elas são e representam.
+          <p className=" text-custom-white">
+            Gosto do simples, muitas vezes até minimalista. Prefiro
+            rotinas leves, ritmo calmo e de tudo que envolve criar com
+            as mãos. Filmes, séries e músicas são meu refúgio quando
+            preciso desacelerar. Sou direta, detalhista e apaixonada
+            pela fotografia documental.
+          </p>
+          <p className=" text-custom-white">
+            E, como uma boa geminiana, carrego essa curiosidade
+            constante de aprender ── inclusive tentando, aos poucos,
+            criar o hábito da leitura.
+          </p>
+          <p className=" text-custom-white">
+            Minha fotografia nasce do que é real.
+            Do jeito único que cada pessoa é, dos gestos, olhares
+            e interações.
+          </p>
+          <p className=" text-custom-white">
+            Eu amo fotografar porque posso testemunhar momentos
+            importantes e registrar emoções que se tornam lembranças.
           </p>
         </div>
       </div>

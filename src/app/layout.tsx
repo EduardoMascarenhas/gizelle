@@ -2,20 +2,23 @@ import Footer from "@/components/footer/intex";
 import Navbar from "@/components/navbar";
 import ScrollToTop from "@/components/scrollToTop";
 import type { Metadata } from "next";
-import { Playfair_Display } from "next/font/google";
+import { Playfair_Display, Heebo } from "next/font/google";
 import "./globals.css";
 import AOSProvider from "@/components/aos";
 
 const playfairDisplay = Playfair_Display({
   variable: "--font-playfair-display",
   subsets: ["latin"],
-  weight: ["400", "700"]
+  weight: [ "400", "600" , "700", "800", "900"],
+});
+const heebo = Heebo({
+  variable: "--font-heebo",
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
-
-
 export const metadata: Metadata = {
-  title: "Gizelle Alves",
+  title: "Giselle Alves",
   description: "Fotógrafa e publicitária",
 };
 
@@ -34,7 +37,7 @@ export default function RootLayout({
         <link rel="icon" href="/favicon.ico" />
       </head>
       <body
-        className={`${playfairDisplay.variable} antialiased`}
+        className={`${playfairDisplay.variable} ${heebo.variable} antialiased`}
       >
         <AOSProvider>
           <Navbar />

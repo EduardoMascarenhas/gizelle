@@ -18,6 +18,8 @@
   --color-custom-brown: #786755;
   --color-custom-dark-gray: #545454;
   --color-custom-bege: #F5F2EB;
+  --color-custom-transparent: #1e1e1e4d;
+  --color-custom-musgo: #3f3b1a;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -25,6 +27,11 @@
     --background: #1e1e1e;
     --foreground: #ededed;
   }
+}
+
+html,
+body {
+  overflow-x: hidden;
 }
 
 body {
@@ -46,4 +53,30 @@ body {
 ::selection {
   background: #786755; /* Tailwind green-500 */
   color: #ffffff;
+}
+
+@keyframes slide-in-right {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slide-in-left {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+.animate-slide-in-right {
+  animation: slide-in-right 0.7s ease-in-out forwards;
+}
+
+.animate-slide-in-left {
+  animation: slide-in-left 0.7s ease-in-out forwards;
 }
