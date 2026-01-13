@@ -68,7 +68,7 @@ const Disclaimer: React.FC = () => {
 
 
   return (
-    <section id="disclaimer" className="bg-custom-bege py-16 px-5 scroll-mt-24 ">
+    <section id="servicos" className="bg-custom-bege py-16 px-5 scroll-mt-24 ">
       <div className="flex flex-col items-center max-w-5xl p-[30px] mx-auto">
         <p style={{ fontFamily: "var(--font-playfair-display)" }} className="text-custom-black text-center font-medium text-xl">
           TRABALHO COM DUAS VERDADES QUE SE ENCONTRAM: O QUE É REAL E O QUE COMUNICA.
