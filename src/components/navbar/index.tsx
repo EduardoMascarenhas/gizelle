@@ -106,7 +106,7 @@ const Navbar: React.FC = () => {
                         </button>
 
                         {portfolioOpen && (
-                            <div className="mt-3 ml-4 space-y-2 text-sm">
+                            <div className="mt-3 ml-4 space-y-2 text-sm flex flex-col">
                                 {portfolioLinks.map((item) => (
                                     <Link key={item.name}
                                         href={item.href} onClick={() => setMenuOpen(false)}>
