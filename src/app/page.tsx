@@ -1,7 +1,6 @@
 import Disclaimer from "@/components/disclaimer";
 import Intro from "@/components/intro";
 import Portfolio from "@/components/portfolio";
-import Servicos from "@/components/servicos";
 import Sobre from "@/components/sobre";
 import TellMe from "@/components/tellme";
 
